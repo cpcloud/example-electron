@@ -1,14 +1,14 @@
 {
-  "name": "app",
-  "productName": "App",
+  "name": "set",
+  "productName": "Set",
   "version": "0.0.0",
   "description": "",
-  "license": "MIT",
-  "repository": "user/repo",
+  "license": "Apache-2.0",
+  "repository": "cpcloud/set",
   "author": {
-    "name": "Excalibur.js Team",
-    "email": "",
-    "url": "https://github.com/excaliburjs"
+    "name": "Phillip Cloud",
+    "email": "cpcloud@gmail.com",
+    "url": "https://github.com/cpcloud/set"
   },
   "scripts": {
     "test": "xo",
@@ -22,7 +22,10 @@
   ],
   "keywords": [
     "electron-app",
-    "electron"
+    "electron",
+    "game",
+    "puzzle",
+    "set"
   ],
   "dependencies": {
     "electron-debug": "1.0.0",

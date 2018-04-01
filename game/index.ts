@@ -1,14 +1,19 @@
 import * as ex from 'excalibur';
-import {Greeter} from "./greeter";
 
-let x = new Greeter("Welcome to Excalibur");
-alert(x.greet());
+class Card extends ex.Actor {
+    draw(ctx: ex.CanvasRenderingContext2D, delta: number): void {
+	// draw pill
+	ctx.beginPath();
+	ctx.moveTo(50, 50);
+	ctx.lineTo(50, 100);
+	ctx.arc(100, 100, 50, Math.pi, true);
+	ctx.closePath();
+    }
+}
 
-var game = new ex.Engine({ displayMode: ex.DisplayMode.FullScreen });
-var hello = new ex.Label('Hello Electron', game.canvasWidth / 2, 100, 'Segoe UI Light');
-hello.color = ex.Color.White;
-hello.fontSize = 50;
-hello.textAlign = ex.TextAlign.Center;
+let game = new ex.Engine({displayMode: ex.DisplayMode.FullScreen});
+let main = new ex.Scene(game);
 
-game.add(hello);
+game.addScene('main', main);
+game.goToScene('main');
 game.start();
