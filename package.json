@@ -28,8 +28,10 @@
     "set"
   ],
   "dependencies": {
+    "chance": "^1.0.13",
     "electron-debug": "1.0.0",
-    "excalibur": "0.14.0"
+    "excalibur": "0.14.0",
+    "lodash": "^4.17.5"
   },
   "devDependencies": {
     "devtron": "1.4.0",
